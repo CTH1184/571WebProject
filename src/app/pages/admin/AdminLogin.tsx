@@ -19,8 +19,12 @@ export function AdminLogin() {
       <div className="max-w-md w-full">
         {/* Logo and Header */}
         <div className="text-center mb-8">
-          <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-            <span className="text-[#c5050c] text-3xl font-bold">W</span>
+          <div className="w-20 h-20 mx-auto mb-4">
+            <img
+              src="/jpeg_wece_logo-main-e1744052584791-1024x624.jpg"
+              alt="WECE Logo"
+              className="w-full h-full object-contain rounded-lg shadow-md"
+            />
           </div>
           <h1 className="text-3xl font-bold text-white mb-2">WECE Board Portal</h1>
           <p className="text-white/80">Sign in to manage your organization</p>

@@ -48,9 +48,11 @@ export function AdminDashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-[#c5050c] rounded-lg flex items-center justify-center">
-                <span className="text-white text-xl font-bold">W</span>
-              </div>
+              <img
+                src="/jpeg_wece_logo-main-e1744052584791-1024x624.jpg"
+                alt="WECE Logo"
+                className="w-10 h-10 rounded-lg shadow-md"
+              />
               <div>
                 <h1 className="text-lg font-semibold text-gray-900">WECE Admin</h1>
                 <p className="text-xs text-gray-600">Board Portal</p>
