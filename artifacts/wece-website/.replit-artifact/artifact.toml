@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "WECE UW-Madison Website"
+version = "1.0.0"
+id = "artifacts/wece-website"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 19831
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/wece-website run dev"
+
+[services.env]
+PORT = "19831"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/wece-website", "run", "build"]
+publicDir = "artifacts/wece-website/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
