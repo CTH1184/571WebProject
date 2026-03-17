@@ -25,11 +25,12 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="h-10 w-10 bg-gradient-to-br from-[#c5050c] to-[#ffc5d0] rounded-lg flex items-center justify-center shadow-md">
-              <span className="text-white text-xl font-bold">W</span>
-            </div>
-            <span className="text-xl font-semibold text-gray-900">WECE</span>
+          <Link to="/" className="flex items-center space-x-2">
+            <img
+              src="/jpeg_wece_logo-main-e1744052584791-1024x624.jpg"
+              alt="WECE Logo"
+              className="h-10 w-auto rounded-lg shadow-md"
+            />
           </Link>
 
           {/* Desktop Navigation */}

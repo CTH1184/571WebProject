@@ -8,11 +8,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="h-10 w-10 bg-gradient-to-br from-[#c5050c] to-[#ffc5d0] rounded-lg flex items-center justify-center shadow-md">
-                <span className="text-white text-xl font-bold">W</span>
-              </div>
-              <span className="text-xl font-semibold">WECE</span>
+            <div className="flex items-center space-x-2 mb-4">
+              <img
+                src="/jpeg_wece_logo-main-e1744052584791-1024x624.jpg"
+                alt="WECE Logo"
+                className="h-10 w-auto rounded-lg shadow-md"
+              />
             </div>
             <p className="text-gray-400 mb-4">
               Women in Electrical & Computer Engineering at UW-Madison. Empowering women and

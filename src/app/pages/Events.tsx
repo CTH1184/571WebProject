@@ -259,13 +259,13 @@ export function Events() {
             </h2>
             <p className="text-gray-600 mb-6">See more event photos and updates @wece_uw</p>
             <a
-              href="https://instagram.com/wece_uw"
+              href="https://www.instagram.com/weceuwmadison/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-colors"
             >
               <Instagram className="mr-2" size={20} />
-              Follow @wece_uw
+              Follow @weceuwmadison
             </a>
           </div>
         </div>
