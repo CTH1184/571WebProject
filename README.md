@@ -1,5 +1,5 @@
 # WECE Website
-Web link powered by Vercel: https://571-web-project.vercel.app/
+Web link powered by Vercel: https://571-web-project.vercel.app/ <--- USE THIS
 
 ## What this project is
 
@@ -144,7 +144,12 @@ Because the repo was exported from Replit, there is more workspace structure tha
 
 ---
 
-## How to run the project locally
+## How to run the project locally (UNDER CONSTRUCTION!!!)
+
+#### NOTE: You may need to run the following command before hand 
+```bash
+corepack use pnpm@latest-10
+```
 
 ### Option 1: Run only the website app
 
@@ -154,7 +159,6 @@ From inside `artifacts/wece-website`:
 pnpm install
 PORT=5173 BASE_PATH=/ pnpm dev
 ```
-
 Then open the local Vite URL.
 
 ### Option 2: Run from the workspace root
