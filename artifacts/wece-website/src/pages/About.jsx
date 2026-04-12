@@ -2,30 +2,26 @@ import { Heart, Target, Users, TrendingUp } from "lucide-react";
 
 const values = [
   {
-    icon: Heart,
-    title: "Inclusivity",
-    description: "We create a welcoming space for women and underrepresented genders in engineering.",
-  },
-  {
-    icon: Target,
-    title: "Excellence",
-    description: "We support our members in achieving their academic and professional goals.",
-  },
-  {
     icon: Users,
     title: "Community",
     description: "We foster meaningful connections and lasting friendships among our members.",
   },
   {
+    icon: Target,
+    title: "Academic Excellence",
+    description: "We support our members in achieving their academic goals through coursework, research, and faculty connections.",
+  },
+  
+  {
     icon: TrendingUp,
-    title: "Growth",
-    description: "We provide opportunities for personal and professional development.",
+    title: "Professional Development",
+    description: "We provide opportunities for professional development and connections with partners from industry.",
   },
 ];
 
 const timeline = [
   {
-    year: "2010",
+    year: "2024",
     title: "WECE Founded",
     description:
       "A group of passionate ECE students established WECE to create a supportive community for women in the field.",
@@ -110,22 +106,6 @@ export default function About() {
                 Through mentorship, networking, and advocacy, we work to create a more inclusive
                 future for engineering.
               </p>
-            </div>
-            <div className="bg-[#ffc5d0]/20 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">By the Numbers</h3>
-              <div className="grid grid-cols-2 gap-6">
-                {[
-                  { value: "500+", label: "Members" },
-                  { value: "15+", label: "Years" },
-                  { value: "20+", label: "Annual Events" },
-                  { value: "30+", label: "Partner Companies" },
-                ].map(({ value, label }) => (
-                  <div key={label} className="text-center">
-                    <div className="text-3xl font-bold text-[#c5050c]">{value}</div>
-                    <div className="text-gray-600 text-sm mt-1">{label}</div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>

@@ -98,7 +98,7 @@ export default function Events() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Events</h1>
           <p className="text-xl max-w-3xl text-white/90">
-            Join us for professional development workshops, social events, and more throughout the semester.
+            Join us for skill workshops, coffee breaks, community events, and professional development sessions.
           </p>
         </div>
       </section>
@@ -186,7 +186,7 @@ export default function Events() {
       {/* Stay Updated */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Stay Updated</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Stay Updated!</h2>
           <p className="text-gray-600 mb-8">
             Follow us on Instagram for the latest event announcements and updates.
           </p>

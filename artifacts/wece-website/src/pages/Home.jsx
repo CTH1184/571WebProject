@@ -93,7 +93,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Empowering Women in Electrical &amp; Computer Engineering
+              Women in Electrical &amp; Computer Engineering
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90">
               Building a supportive community for women and underrepresented genders in ECE at UW-Madison
@@ -136,14 +136,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What We Offer */}
+      {/* About Us */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
-            What We Offer
+            About Us
           </h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            WECE provides a variety of resources and opportunities to help you succeed in ECE.
+            Women in Electrical and Computer Engineering (WECE) is a student organization at UW-Madison that provides educational resources, social activities, and networking opportunities for women studying electrical and computer engineering.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {offerings.map(({ icon: Icon, title, description }) => (

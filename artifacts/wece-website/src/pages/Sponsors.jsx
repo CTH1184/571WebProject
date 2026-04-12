@@ -75,7 +75,7 @@ export default function Sponsors() {
               className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#c5050c] rounded-lg hover:bg-gray-100 transition-colors font-semibold shadow-lg hover:shadow-xl"
             >
               <FileText className="mr-2" size={20} />
-              Company Database Form
+              Company Inquiry Form
             </a>
             <a
               href="/WECE-Sponsorship-Packet.pdf"
@@ -116,7 +116,7 @@ export default function Sponsors() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">
-            Our Current Sponsors
+            Thank You to Our Valued Sponsors
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {sponsors.map((sponsor) => (
@@ -215,7 +215,7 @@ export default function Sponsors() {
               className="inline-flex items-center justify-center px-8 py-3 bg-white text-[#c5050c] rounded-lg hover:bg-gray-100 transition-colors font-semibold shadow-lg hover:shadow-xl"
             >
               <FileText className="mr-2" size={20} />
-              Company Database Form
+              Company Inquiry Form
             </a>
             <Link
               to="/contact"

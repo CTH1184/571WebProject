@@ -16,11 +16,11 @@ function MemberCard({ member }) {
       <p className="text-gray-500 text-sm mb-3">{member.year}</p>
       <p className="text-gray-600 text-sm mb-4">{member.bio}</p>
       <a
-        href={`mailto:${member.email}`}
+        href={`mailto:${member.email}@wisc.edu`}
         className="inline-flex items-center text-[#c5050c] hover:text-[#a00409] text-sm font-medium transition-colors"
       >
         <Mail size={14} className="mr-1" />
-        {member.email}
+        {member.email}@wisc.edu
       </a>
     </div>
   );
@@ -149,7 +149,7 @@ export default function Board() {
       {/* Presidents */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader title="President" />
+          <SectionHeader title="Co-Presidents" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {presidents.map((m) => <MemberCard key={m.name} member={m} />)}
           </div>
@@ -209,9 +209,9 @@ export default function Board() {
       {/* CTA */}
       <section className="py-16 bg-gradient-to-br from-[#c5050c] via-[#a00409] to-[#c5050c] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Questions for the Board?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Questions about WECE?</h2>
           <p className="text-xl mb-8 text-white/90">
-            Reach out to us anytime. We're happy to answer questions about WECE, membership, or events.
+            Reach out to us anytime. We're happy to answer questions about WECE, membership, and events.
           </p>
           <a
             href={`mailto:${CONTACT_EMAIL}`}

@@ -1,5 +1,5 @@
 # WECE Website
-Web link powered by Vercel: https://571-web-project.vercel.app/ <--- USE THIS 
+Web link powered by Vercel: https://571-web-project.vercel.app/ <--- USE THIS
 
 ## What this project is
 
