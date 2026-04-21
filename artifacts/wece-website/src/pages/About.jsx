@@ -58,19 +58,14 @@ const faqs = [
       "While WECE primarily serves ECE students, we welcome anyone interested in electrical and computer engineering or passionate about supporting diversity in STEM fields.",
   },
   {
-    question: "How much does it cost to join?",
-    answer:
-      "WECE membership is free! We believe in making our community accessible to all students. Some special events may have optional fees for food or materials.",
-  },
-  {
     question: "How often does WECE meet?",
     answer:
-      "We host a variety of events throughout the semester, including weekly general meetings, monthly professional development workshops, and social events. Members can attend as many or as few events as their schedule allows.",
+      "We host a variety of events throughout the semester, including weekly general meetings, coffee breaks, professional development workshops, and social events. Check out our Instagram to get the latest updates!",
   },
   {
     question: "What kind of events does WECE organize?",
     answer:
-      "We organize professional development workshops, industry networking events, study sessions, social gatherings, mentorship meetups, and guest speaker panels. There's something for everyone!",
+      "We organize professional development workshops, industry networking events, study sessions, coffee breaks, and  community-building events. There's something for everyone!",
   },
 ];
 
