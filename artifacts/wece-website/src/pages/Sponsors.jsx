@@ -1,7 +1,7 @@
 import { Building2, Handshake, Users, Heart, Mail, ExternalLink, FileText } from "lucide-react";
 import { Link } from "wouter";
 
-const CONTACT_EMAIL = "wece.uwmadison@gmail.com";
+const CONTACT_EMAIL = "wece.uwmadison";
 
 const sponsors = [
   {
@@ -183,7 +183,7 @@ export default function Sponsors() {
                 className="inline-flex items-center px-6 py-2 bg-[#ffc5d0]/30 text-[#c5050c] rounded-lg hover:bg-[#ffc5d0]/50 transition-colors font-semibold"
               >
                 <Mail size={16} className="mr-2" />
-                {externalVP.email}
+                {externalVP.email}@wisc.edu
               </a>
             </div>
             <div className="mt-6">

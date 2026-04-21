@@ -7,7 +7,7 @@ const offerings = [
   {
     icon: Users,
     title: "Community",
-    description: "Join a supportive network of women and allies in ECE who understand your journey.",
+    description: "Join a supportive network of women and allies in Electrical and Computer Engineering who understand your journey.",
   },
   {
     icon: Briefcase,
@@ -122,7 +122,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { value: "500+", label: "Active Members" },
+              { value: "150+", label: "Active Members" },
               { value: "15+", label: "Years Founded" },
               { value: "20+", label: "Annual Events" },
               { value: "30+", label: "Industry Partners" },

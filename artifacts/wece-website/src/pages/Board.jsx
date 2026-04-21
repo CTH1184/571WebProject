@@ -218,7 +218,7 @@ export default function Board() {
             className="inline-flex items-center justify-center px-8 py-3 bg-white text-[#c5050c] rounded-lg hover:bg-gray-100 transition-colors font-semibold shadow-lg"
           >
             <Mail className="mr-2" size={20} />
-            {CONTACT_EMAIL}
+            {CONTACT_EMAIL}@gmail.com
           </a>
         </div>
       </section>

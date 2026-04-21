@@ -355,7 +355,7 @@ export default function GetInvolved() {
                 Connect with experienced peers and alumni who can guide you through your academic and professional journey.
               </p>
               <a
-                href={`mailto:${CONTACT_EMAIL}`}
+                href={`mailto:${CONTACT_EMAIL}@gmail.com`}
                 className="text-[#c5050c] hover:text-[#a00409] font-semibold inline-flex items-center"
               >
                 Learn More

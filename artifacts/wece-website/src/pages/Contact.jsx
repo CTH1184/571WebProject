@@ -30,7 +30,7 @@ const faqs = [
   {
     question: "What's the best way to reach WECE?",
     answer:
-      `Email is the best way to reach us! Use ${CONTACT_EMAIL} for all inquiries. We'll make sure your message gets to the right team member.`,
+      `Email is the best way to reach us! Use ${CONTACT_EMAIL}@gmail.com for all inquiries. We'll make sure your message gets to the right team member.`,
   },
   {
     question: "How quickly can I expect a response?",
@@ -75,7 +75,7 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl max-w-3xl text-white/90">
-            Have questions? We'd love to hear from you. Get in touch with the WECE team.
+            Have questions? We'd love to hear from you! Get in touch with the WECE team below.
           </p>
         </div>
       </section>
@@ -98,11 +98,11 @@ export default function Contact() {
                 <h3 className="text-xl font-semibold mb-3 text-gray-900">{card.title}</h3>
                 <p className="text-gray-600 mb-4">{card.description}</p>
                 <a
-                  href={`mailto:${card.email}`}
+                  href={`mailto:${card.email}@gmail.com`}
                   className="text-[#c5050c] hover:text-[#a00409] font-semibold inline-flex items-center"
                 >
                   <Mail size={18} className="mr-2" />
-                  {card.email}
+                  {card.email}@gmail.com
                 </a>
               </div>
             ))}

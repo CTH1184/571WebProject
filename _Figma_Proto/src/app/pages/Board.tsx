@@ -191,7 +191,7 @@ export function Board() {
                     aria-label="Email"
                   >
                     <Mail size={16} className="mr-2" />
-                    <span className="text-sm">{member.email}</span>
+                    <span className="text-sm">{member.email}@wisc.edu</span>
                   </a>
                 </div>
               </div>

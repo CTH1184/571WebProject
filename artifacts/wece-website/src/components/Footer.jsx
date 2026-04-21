@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Mail, Instagram, Linkedin } from "lucide-react";
 
-const CONTACT_EMAIL = "wece.uwmadison@gmail.com";
+const CONTACT_EMAIL = "wece.uwmadison";
 const LINKEDIN_URL = "https://linkedin.com/company/weceuwmadison/";
 const INSTAGRAM_URL = "https://www.instagram.com/weceuwmadison/";
 
@@ -43,7 +43,7 @@ export default function Footer() {
                 <Linkedin size={20} />
               </a>
               <a
-                href={`mailto:${CONTACT_EMAIL}`}
+                href={`mailto:${CONTACT_EMAIL}@gmail.com`}
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Email"
               >
@@ -96,10 +96,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href={`mailto:${CONTACT_EMAIL}`}
+                  href={`mailto:${CONTACT_EMAIL}@gmail.com`}
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
-                  {CONTACT_EMAIL}
+                  {CONTACT_EMAIL}@gmail.com
                 </a>
               </li>
             </ul>

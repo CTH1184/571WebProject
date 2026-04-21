@@ -19,33 +19,6 @@ const values = [
   },
 ];
 
-const timeline = [
-  {
-    year: "2024",
-    title: "WECE Founded",
-    description:
-      "A group of passionate ECE students established WECE to create a supportive community for women in the field.",
-  },
-  {
-    year: "2015",
-    title: "First Industry Partnership",
-    description:
-      "Launched our corporate sponsorship program, connecting members with leading tech companies.",
-  },
-  {
-    year: "2020",
-    title: "Mentorship Program",
-    description:
-      "Established our formal mentorship program, pairing underclassmen with experienced peers and alumni.",
-  },
-  {
-    year: "2025",
-    title: "500+ Members",
-    description:
-      "Grew to become one of the largest student organizations in the College of Engineering.",
-  },
-];
-
 const faqs = [
   {
     question: "Who can join WECE?",
