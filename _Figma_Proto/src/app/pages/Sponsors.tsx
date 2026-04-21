@@ -50,7 +50,7 @@ export function Sponsors() {
   const externalVP = {
     name: "Bhumika Thakur",
     role: "VP of External Relations",
-    email: "bsthakur@wisc.edu",
+    email: "bsthakur",
   };
 
   return (
@@ -176,11 +176,11 @@ export function Sponsors() {
                 </h3>
                 <p className="text-[#c5050c] font-semibold mb-4">{externalVP.role}</p>
                 <a
-                  href={`mailto:${externalVP.email}`}
+                  href={`mailto:${externalVP.email}@wisc.edu`}
                   className="text-gray-600 hover:text-[#c5050c] transition-colors inline-flex items-center"
                 >
                   <Mail size={18} className="mr-2" />
-                  {externalVP.email}
+                  {externalVP.email}@wisc.edu
                 </a>
               </div>
             </div>

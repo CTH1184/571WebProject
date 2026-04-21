@@ -51,7 +51,7 @@ const partnershipBenefits = [
 const externalVP = {
   name: "Bhumika Thakur",
   role: "VP of External Relations",
-  email: "bsthakur@wisc.edu",
+  email: "bsthakur",
 };
 
 export default function Sponsors() {
@@ -179,7 +179,7 @@ export default function Sponsors() {
                 <span className="font-semibold">{externalVP.name}</span> — {externalVP.role}
               </div>
               <a
-                href={`mailto:${externalVP.email}`}
+                href={`mailto:${externalVP.email}@wisc.edu`}
                 className="inline-flex items-center px-6 py-2 bg-[#ffc5d0]/30 text-[#c5050c] rounded-lg hover:bg-[#ffc5d0]/50 transition-colors font-semibold"
               >
                 <Mail size={16} className="mr-2" />

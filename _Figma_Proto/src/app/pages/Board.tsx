@@ -6,14 +6,14 @@ export function Board() {
     {
       name: "Brooke Weiss",
       title: "Co-President",
-      email: "bsweiss2@wisc.edu",
+      email: "bsweiss2",
       year: "Senior",
       bio: "Passionate about fostering a strong, supportive community for women in ECE.",
     },
     {
       name: "Natalie Wells",
       title: "Co-President",
-      email: "npwells2@wisc.edu",
+      email: "npwells2",
       year: "Senior",
       bio: "Dedicated to advancing opportunities and creating meaningful connections for WECE members.",
     },
@@ -23,21 +23,21 @@ export function Board() {
     {
       name: "Aayushi Singh",
       title: "VP of Operations",
-      email: "aayushi.singh@wisc.edu",
+      email: "aayushi.singh",
       year: "Junior",
       bio: "Ensuring smooth operations and exceptional member experiences.",
     },
     {
       name: "Anna Huang",
       title: "Director of Social Media & Marketing",
-      email: "ahuang62@wisc.edu",
+      email: "ahuang62",
       year: "Sophomore",
       bio: "Growing WECE's presence through strategic marketing and social media engagement.",
     },
     {
       name: "Audrey Song",
       title: "Director of New Member",
-      email: "arsong@wisc.edu",
+      email: "arsong",
       year: "Sophomore",
       bio: "Welcoming and onboarding new members to the WECE community.",
     },
@@ -46,7 +46,7 @@ export function Board() {
   const internals = {
     name: "Jovita D'Souza",
     title: "VP of Internal Relations",
-    email: "jdsouza4@wisc.edu",
+    email: "jdsouza4",
     year: "Junior",
     bio: "Building strong internal connections and member engagement within WECE.",
   };
@@ -55,21 +55,21 @@ export function Board() {
     {
       name: "Bhumika Thakur",
       title: "VP of External Relations",
-      email: "bsthakur@wisc.edu",
+      email: "bsthakur",
       year: "Junior",
       bio: "Creating valuable partnerships with industry and external organizations.",
     },
     {
       name: "Alison Wortley",
       title: "Co-Director of Professional Development",
-      email: "awortley@wisc.edu",
+      email: "awortley",
       year: "Sophomore",
       bio: "Organizing professional development workshops and career-building opportunities.",
     },
     {
       name: "Mahathi Karthikeyan",
       title: "Co-Director of Professional Development",
-      email: "mkarthikeyan@wisc.edu",
+      email: "mkarthikeyan",
       year: "Sophomore",
       bio: "Connecting members with industry professionals and career resources.",
     },
@@ -78,7 +78,7 @@ export function Board() {
   const finance = {
     name: "Lydia Randall",
     title: "VP of Finance",
-    email: "lrandall3@wisc.edu",
+    email: "lrandall3",
     year: "Junior",
     bio: "Managing WECE's financial operations and ensuring responsible resource allocation.",
   };
@@ -87,14 +87,14 @@ export function Board() {
     {
       name: "Frankie Cicmil",
       title: "Co-Senior Advisor",
-      email: "cicmil@wisc.edu",
+      email: "cicmil",
       year: "Super Senior",
       bio: "Providing guidance and mentorship to the WECE board and members.",
     },
     {
       name: "Abby Rokus",
       title: "Co-Senior Advisor",
-      email: "arokus@wisc.edu",
+      email: "arokus",
       year: "Super Senior",
       bio: "Supporting leadership continuity and sharing organizational knowledge.",
     },

@@ -30,9 +30,9 @@ export function AdminDashboard() {
   ];
 
   const recentMembers = [
-    { name: "Emily Zhang", email: "ezhang@wisc.edu", joined: "March 15, 2026" },
-    { name: "Sarah Johnson", email: "sjohnson@wisc.edu", joined: "March 14, 2026" },
-    { name: "Maya Patel", email: "mpatel@wisc.edu", joined: "March 13, 2026" },
+    { name: "Emily Zhang", email: "ezhang", joined: "March 15, 2026" },
+    { name: "Sarah Johnson", email: "sjohnson", joined: "March 14, 2026" },
+    { name: "Maya Patel", email: "mpatel", joined: "March 13, 2026" },
   ];
 
   const announcements = [
