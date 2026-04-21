@@ -278,33 +278,6 @@ export function About() {
         </div>
       </section>
 
-      {/* Timeline Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">
-            Our Journey
-          </h2>
-          <div className="space-y-8">
-            {timeline.map((item, index) => (
-              <div key={item.year} className="flex gap-6">
-                <div className="flex flex-col items-center">
-                  <div className="w-16 h-16 bg-[#c5050c] text-white rounded-full flex items-center justify-center font-bold">
-                    {item.year}
-                  </div>
-                  {index !== timeline.length - 1 && (
-                    <div className="w-1 flex-1 bg-[#ffc5d0] mt-2"></div>
-                  )}
-                </div>
-                <div className="flex-1 pb-8">
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">{item.title}</h3>
-                  <p className="text-gray-600">{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
