@@ -4,7 +4,7 @@ import { InstagramEmbed } from "react-social-media-embed";
 const INSTAGRAM_URL = "https://www.instagram.com/weceuwmadison/";
 
 const instagramPosts = [
-  "https://www.instagram.com/p/DXQDE_ekUs6/",
+  "https://www.instagram.com/p/DXQDE_ekUs6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
   "https://www.instagram.com/p/DXM137Limcz/",
   "https://www.instagram.com/p/DW4lkxnke5u/",
   "https://www.instagram.com/p/DWzkhnBEe0R/",
