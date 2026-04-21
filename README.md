@@ -24,7 +24,7 @@ If you only have a few minutes, focus on these files/folders:
 ```text
 artifacts/wece-website/
 ├── public/
-│   ├── wece_logo-abstract.jpg
+│   ├── wece_logo-abstract.png
 │   └── WECE-Sponsorship-Packet.pdf
 ├── src/
 │   ├── App.jsx
@@ -392,7 +392,7 @@ Implements:
 
 Notable details:
 - uses `useLocation()` from Wouter to determine active links
-- logo source is `/wece_logo-abstract.jpg`
+- logo source is `/wece_logo-abstract.png`
 
 ## `Footer.jsx`
 Implements:
@@ -412,14 +412,14 @@ Notable details:
 
 Located in `artifacts/wece-website/public/`:
 
-- `wece_logo-abstract.jpg` → WECE logo used in navbar/footer
+- `wece_logo-abstract.png` → WECE logo used in navbar/footer
 - `WECE-Sponsorship-Packet.pdf` → linked from sponsor page buttons
 - `favicon.svg`
 - `opengraph.jpg`
 
 Because these files are in `public/`, they are referenced with root-relative URLs such as:
 
-- `/wece_logo-abstract.jpg`
+- `/wece_logo-abstract.png`
 - `/WECE-Sponsorship-Packet.pdf`
 
 ---
