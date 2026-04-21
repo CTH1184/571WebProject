@@ -27,7 +27,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img
-              src="/wece-logo.jpg"
+              src="/wece_logo-abstract.jpg"
               alt="WECE Logo"
               className="h-10 w-auto object-contain"
             />

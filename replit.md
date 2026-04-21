@@ -38,7 +38,7 @@ artifacts-monorepo/
 │   │   │       ├── Contact.jsx      # Contact form + FAQ
 │   │   │       └── GetInvolved.jsx  # Interest form with Other field
 │   │   └── public/
-│   │       ├── wece-logo.jpg               # WECE logo (from zip)
+│   │       ├── wece_logo-abstract.jpg               # WECE logo (from zip)
 │   │       └── WECE-Sponsorship-Packet.pdf # Sponsorship PDF (from zip)
 │   └── api-server/          # Express API server
 ├── lib/                     # Shared libraries
