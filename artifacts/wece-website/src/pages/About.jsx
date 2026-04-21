@@ -93,16 +93,16 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Our Mission</h2>
-              <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">Our Mission</h2>
+              <p className="text-lg text-gray-700 mb-4 text-center leading-relaxed">
                 WECE is dedicated to empowering women and underrepresented genders in Electrical and
                 Computer Engineering at the University of Wisconsin-Madison.
               </p>
-              <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+              <p className="text-lg text-gray-700 mb-4 text-center leading-relaxed">
                 We provide a supportive community, professional development opportunities, and
                 connections to help our members thrive in academia and industry.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-gray-700 text-center leading-relaxed">
                 Through mentorship, networking, and advocacy, we work to create a more inclusive
                 future for engineering.
               </p>
@@ -117,7 +117,7 @@ export default function About() {
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">
             Our Values
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {values.map(({ icon: Icon, title, description }) => (
               <div
                 key={title}
