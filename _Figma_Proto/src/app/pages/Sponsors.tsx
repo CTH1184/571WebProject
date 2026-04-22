@@ -80,7 +80,7 @@ export function Sponsors() {
               className="inline-flex items-center justify-center px-6 py-3 bg-transparent border-2 border-white text-white rounded-lg hover:bg-white/10 transition-colors font-semibold"
             >
               <FileText className="mr-2" size={20} />
-              Sponsorship Packet [PDF]
+              Sponsorship Packet
             </a>
           </div>
         </div>

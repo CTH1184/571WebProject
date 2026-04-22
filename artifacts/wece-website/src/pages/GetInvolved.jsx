@@ -86,7 +86,7 @@ const faqs = [
   {
     question: "How do I apply for board positions?",
     answer:
-      "Board applications typically open in the spring semester. We'll send an announcement to our mailing list. Prior involvement in WECE is helpful but not required.",
+      "Board applications open at the end of each semester semester. We'll send an announcement to our mailing list. Prior involvement in WECE is helpful but not required.",
   },
 ];
 
@@ -340,7 +340,7 @@ export default function GetInvolved() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="w-16 h-16 bg-[#ffc5d0] rounded-lg flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#ffc5d0] rounded-lg flex items-center justify-center mx-auto mb-6">
                 <Calendar className="text-[#c5050c]" size={32} />
               </div>
               <h3 className="text-2xl font-semibold mb-4 text-gray-900">Attend an Event</h3>
@@ -357,7 +357,7 @@ export default function GetInvolved() {
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="w-16 h-16 bg-[#ffc5d0] rounded-lg flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#ffc5d0] rounded-lg flex items-center justify-center mx-auto mb-6">
                 <Heart className="text-[#c5050c]" size={32} />
               </div>
               <h3 className="text-2xl font-semibold mb-4 text-gray-900">Mentorship Program</h3>
@@ -374,12 +374,12 @@ export default function GetInvolved() {
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="w-16 h-16 bg-[#ffc5d0] rounded-lg flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#ffc5d0] rounded-lg flex items-center justify-center mx-auto mb-6">
                 <Award className="text-[#c5050c]" size={32} />
               </div>
-              <h3 className="text-2xl font-semibold mb-4 text-gray-900">Apply for Board</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-gray-900">Apply for Board Positions</h3>
               <p className="text-gray-700 mb-6">
-                Take on a leadership role and help shape the future of WECE. Board applications open each spring.
+                Take on a leadership role and help shape the future of WECE. Board applications open at the end of each semester.
               </p>
               <Link
                 to="/board"

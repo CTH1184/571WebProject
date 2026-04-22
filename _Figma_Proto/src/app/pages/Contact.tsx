@@ -90,13 +90,6 @@ export function Contact() {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-900">{card.title}</h3>
                 <p className="text-gray-600 mb-4">{card.description}</p>
-                <a
-                  href={`mailto:${card.email}`}
-                  className="text-[#c5050c] hover:text-[#a00409] font-semibold inline-flex items-center"
-                >
-                  <Mail size={18} className="mr-2" />
-                  {card.email}
-                </a>
               </div>
             ))}
           </div>
