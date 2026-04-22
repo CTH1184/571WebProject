@@ -114,10 +114,20 @@ export default function GetInvolved() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    setFormData({ name: "", email: "", year: "", major: "", interests: [], otherInterest: "" });
+    const res = await fetch("/api/subscribe", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+    if (res.ok) {
+      setSubmitted(true);
+      setFormData({ name: "", email: "", year: "", major: "", interests: [], otherInterest: "" });
+    } else {
+      const { error } = await res.json();
+      alert(`Submission failed: ${error}`);
+    }
   };
 
   const hasOther = formData.interests.includes("Other");

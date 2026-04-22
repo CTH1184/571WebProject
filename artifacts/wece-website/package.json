@@ -75,6 +75,7 @@
     "zod": "catalog:"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.104.0",
     "react-social-media-embed": "^2.5.18"
   }
 }
