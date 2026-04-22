@@ -92,7 +92,7 @@ export default function Contact() {
                 key={card.title}
                 className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="w-16 h-16 bg-[#ffc5d0] rounded-lg flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-[#ffc5d0] rounded-lg flex items-center justify-center mx-auto mb-6">
                   <card.icon className="text-[#c5050c]" size={32} />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-900">{card.title}</h3>

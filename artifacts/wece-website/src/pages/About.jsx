@@ -59,7 +59,7 @@ export default function About() {
       {/* Mission */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">Our Mission</h2>
               <p className="text-lg text-gray-700 mb-4 text-center leading-relaxed">

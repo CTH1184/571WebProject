@@ -62,10 +62,13 @@ export default function Sponsors() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Industry</h1>
           <p className="text-xl max-w-3xl text-white/90 mb-6 leading-relaxed">
-            Partner with WECE to support diversity and inclusion in electrical and computer
-            engineering while connecting with talented students at UW-Madison. Engage through
-            events, tech talks, and mentorship opportunities to build meaningful relationships
-            with the next generation of engineers.
+            At WECE UW-Madison, we're building a community that supports, uplifts, and celebrates women in electrical 
+            and computer engineering. We're excited to grow relationships with companies and organizations that share 
+            our mission.
+          </p>
+          <p className="text-xl max-w-3xl text-white/90 mb-6 leading-relaxed">
+            Whether you're looking to connect with passionate students, support diversity in STEM, or get involved in 
+            outreach and events, we'd love to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <a
@@ -84,7 +87,7 @@ export default function Sponsors() {
               className="inline-flex items-center justify-center px-6 py-3 bg-transparent border-2 border-white text-white rounded-lg hover:bg-white/10 transition-colors font-semibold"
             >
               <FileText className="mr-2" size={20} />
-              Sponsorship Packet [PDF]
+              Sponsorship Packet
             </a>
           </div>
         </div>
@@ -160,7 +163,7 @@ export default function Sponsors() {
               className="inline-flex items-center justify-center px-8 py-3 bg-[#c5050c] text-white rounded-lg hover:bg-[#a00409] transition-colors font-semibold shadow-md"
             >
               <FileText className="mr-2" size={20} />
-              Sponsorship Packet [PDF]
+              Sponsorship Packet
             </a>
           </div>
         </div>

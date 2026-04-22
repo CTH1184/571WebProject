@@ -321,7 +321,7 @@ Main sections:
 
 Important implemented features:
 - **Company Database Form** button links to a Google Form
-- **Sponsorship Packet [PDF]** button links to `/WECE-Sponsorship-Packet.pdf`
+- **Sponsorship Packet** button links to `/WECE-Sponsorship-Packet.pdf`
 - sponsor cards open external sites in a new tab
 - contact section uses Bhumika Thakur’s external-relations email
 
