@@ -8,16 +8,19 @@ const sponsors = [
     name: "University of Wisconsin-Madison Department of Electrical & Computer Engineering",
     website: "https://engineering.wisc.edu/departments/electrical-computer-engineering/",
     description: "Supporting WECE and ECE students at UW-Madison",
+    logo: "/sponsors/UW-madison-ECE-logo.png",
   },
   {
     name: "Epic Systems",
     website: "https://www.epic.com/",
     description: "Healthcare software leader",
+    logo: "/sponsors/epic-systems-corporation-logo.png",
   },
   {
     name: "Garmin",
     website: "https://www.garmin.com/en-US/",
     description: "GPS technology and wearable innovator",
+    logo: "/sponsors/garmin-logo.png",
   },
 ];
 
@@ -130,8 +133,14 @@ export default function Sponsors() {
                 rel="noopener noreferrer"
                 className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all hover:border-[#c5050c] border border-transparent group text-center"
               >
-                <div className="w-16 h-16 bg-[#ffc5d0] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Building2 className="text-[#c5050c]" size={28} />
+                <div className="w-24 h-24 flex items-center justify-center mx-auto mb-4">
+                  {sponsor.logo ? (
+                    <img src={sponsor.logo} alt={sponsor.name} className="w-full h-full object-contain" />
+                  ) : (
+                    <div className="w-full h-full bg-[#ffc5d0] rounded-full flex items-center justify-center">
+                      <Building2 className="text-[#c5050c]" size={28} />
+                    </div>
+                  )}
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-[#c5050c] transition-colors">
                   {sponsor.name}
