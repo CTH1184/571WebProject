@@ -6,10 +6,14 @@ const CONTACT_EMAIL = "wece.uwmadison";
 function MemberCard({ member }) {
   return (
     <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow text-center">
-      <div className="w-20 h-20 bg-gradient-to-br from-[#c5050c] to-[#ffc5d0] rounded-full flex items-center justify-center mx-auto mb-4">
-        <span className="text-white text-2xl font-bold">
-          {member.name.charAt(0)}
-        </span>
+      <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden">
+        {member.photo ? (
+          <img src={member.photo} alt={member.name} className="w-full h-full object-cover" />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-[#c5050c] to-[#ffc5d0] flex items-center justify-center">
+            <span className="text-white text-2xl font-bold">{member.name.charAt(0)}</span>
+          </div>
+        )}
       </div>
       <h3 className="text-lg font-semibold text-gray-900 mb-1">{member.name}</h3>
       <p className="text-[#c5050c] font-medium text-sm mb-1">{member.title}</p>
@@ -33,6 +37,7 @@ const presidents = [
     email: "bsweiss2",
     year: "Senior",
     bio: "Passionate about fostering a strong, supportive community for women in ECE.",
+    photo: "/board-members/brooke_weiss.jpeg",
   },
   {
     name: "Natalie Wells",
@@ -40,6 +45,7 @@ const presidents = [
     email: "npwells2",
     year: "Senior",
     bio: "Dedicated to advancing opportunities and creating meaningful connections for WECE members.",
+    photo: "/board-members/natalie_wells.png",
   },
 ];
 
@@ -50,6 +56,7 @@ const operations = [
     email: "aayushi.singh",
     year: "Junior",
     bio: "Ensuring smooth operations and exceptional member experiences.",
+    photo: "/board-members/aayushi_singh-e1761150233238-768x963.jpeg",
   },
   {
     name: "Anna Huang",
@@ -57,6 +64,7 @@ const operations = [
     email: "ahuang62",
     year: "Sophomore",
     bio: "Growing WECE's presence through strategic marketing and social media engagement.",
+    photo: "/board-members/Anna-Headshot-e1761150380510.jpg",
   },
   {
     name: "Audrey Song",
@@ -64,6 +72,7 @@ const operations = [
     email: "arsong",
     year: "Sophomore",
     bio: "Welcoming and onboarding new members to the WECE community.",
+    photo: "/board-members/audrey_song-scaled-e1761500997734-768x965.jpeg",
   },
 ];
 
@@ -73,6 +82,7 @@ const internals = {
   email: "jdsouza4",
   year: "Junior",
   bio: "Building strong internal connections and member engagement within WECE.",
+  photo: "/board-members/jovita_dsouza-scaled-e1761150276351-768x963.jpeg",
 };
 
 const externals = [
@@ -82,6 +92,7 @@ const externals = [
     email: "bsthakur",
     year: "Junior",
     bio: "Creating valuable partnerships with industry and external organizations.",
+    photo: "/board-members/bhumika_thakur-e1761500730541.jpeg",
   },
   {
     name: "Alison Wortley",
@@ -105,6 +116,7 @@ const finance = {
   email: "lrandall3",
   year: "Junior",
   bio: "Managing WECE's financial operations and ensuring responsible resource allocation.",
+  photo: "/board-members/lydia_randall-scaled-e1761583650938-768x964.jpeg",
 };
 
 const seniorAdvisors = [
@@ -114,6 +126,7 @@ const seniorAdvisors = [
     email: "cicmil",
     year: "Super Senior",
     bio: "Providing guidance and mentorship to the WECE board and members.",
+    photo: "/board-members/frankie_cicmil-e1761583733322-768x960.jpg",
   },
   {
     name: "Abby Rokus",
@@ -121,6 +134,7 @@ const seniorAdvisors = [
     email: "arokus",
     year: "Super Senior",
     bio: "Supporting leadership continuity and sharing organizational knowledge.",
+    photo: "/board-members/Abby_Rokus-scaled-e1761511743810-768x963.jpeg",
   },
 ];
 
