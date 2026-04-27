@@ -68,10 +68,7 @@ export default function About() {
               </p>
               <p className="text-lg text-gray-700 mb-4 text-center leading-relaxed">
                 We provide a supportive community, professional development opportunities, and
-                connections to help our members thrive in academia and industry.
-              </p>
-              <p className="text-lg text-gray-700 text-center leading-relaxed">
-                Through mentorship, networking, and advocacy, we work to create a more inclusive
+                connections to help our members thrive in academia and industry. Through mentorship, networking, and advocacy, we work to create a more inclusive
                 future for engineering.
               </p>
             </div>

@@ -1,7 +1,7 @@
 import { Mail, Instagram, Linkedin, MessageSquare, Briefcase, Users } from "lucide-react";
 import { useState } from "react";
 
-const CONTACT_EMAIL = "wece.uwmadison@gmail.com";
+const CONTACT_EMAIL = "wece.uwmadison";
 const LINKEDIN_URL = "https://linkedin.com/company/weceuwmadison/";
 const INSTAGRAM_URL = "https://www.instagram.com/weceuwmadison/";
 
@@ -9,19 +9,19 @@ const contactCards = [
   {
     icon: Users,
     title: "General Inquiries",
-    email: CONTACT_EMAIL,
+    email: `${CONTACT_EMAIL}@gmail.com`,
     description: "Questions about WECE, membership, or general information",
   },
   {
     icon: MessageSquare,
     title: "New Members",
-    email: CONTACT_EMAIL,
+    email: `${CONTACT_EMAIL}@gmail.com`,
     description: "Join WECE, get involved, or learn about upcoming events",
   },
   {
     icon: Briefcase,
     title: "Sponsorship",
-    email: CONTACT_EMAIL,
+    email: `${CONTACT_EMAIL}@gmail.com`,
     description: "Corporate partnerships and sponsorship opportunities",
   },
 ];

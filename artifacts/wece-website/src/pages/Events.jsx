@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { InstagramEmbed } from "react-social-media-embed";
+import Calendar from "@ericz1803/react-google-calendar";
 
 const INSTAGRAM_URL = "https://www.instagram.com/weceuwmadison/";
 
@@ -40,6 +41,11 @@ export default function Events() {
                 <InstagramEmbed url={url} width={328} />
               </div>
             ))}
+          </div>
+          <div>
+            {/* Calendar */}
+          <iframe src="https://calendar.google.com/calendar/embed?src=wece.uwmadison%40gmail.com&ctz=America%2FChicago" 
+            style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
           </div>
         </div>
       </section>

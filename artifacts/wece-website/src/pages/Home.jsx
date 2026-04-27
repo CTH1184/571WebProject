@@ -28,22 +28,22 @@ const offerings = [
 
 const upcomingEvents = [
   {
-    title: "Industry Night",
-    date: "March 20, 2026",
-    type: "Professional",
-    description: "Network with representatives from leading tech companies",
-  },
-  {
-    title: "Study Social",
-    date: "March 22, 2026",
+    title: "WECE 2026-2027 Elections",
+    date: "April 22, 2026",
     type: "Academic",
-    description: "Join us for a collaborative study session with snacks",
+    description: "Join the WECE board and vote on representatives",
   },
   {
-    title: "Mentorship Meetup",
-    date: "March 25, 2026",
-    type: "Mentorship",
-    description: "Connect with upperclassmen and alumni mentors",
+    title: "Technical Org Night",
+    date: "April 21, 2026",
+    type: "Academic",
+    description: "Check out engineering orgs and their projects",
+  },
+  {
+    title: "Collaborative Engineering with Garmin",
+    date: "April 13, 2026",
+    type: "Professional",
+    description: "Connect with representatives at Garmin",
   },
 ];
 
@@ -113,25 +113,6 @@ export default function Home() {
                 View Events
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { value: "150+", label: "Active Members" },
-              { value: "15+", label: "Years Founded" },
-              { value: "20+", label: "Annual Events" },
-              { value: "30+", label: "Industry Partners" },
-            ].map(({ value, label }) => (
-              <div key={label}>
-                <div className="text-3xl md:text-4xl font-bold text-[#c5050c]">{value}</div>
-                <div className="text-gray-600 mt-1 text-sm">{label}</div>
-              </div>
-            ))}
           </div>
         </div>
       </section>

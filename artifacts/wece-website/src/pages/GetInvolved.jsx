@@ -2,7 +2,7 @@ import { useState } from "react";
 import { CheckCircle, Calendar, Users, Award, Heart, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 
-const CONTACT_EMAIL = "wece.uwmadison@gmail.com";
+const CONTACT_EMAIL = "wece.uwmadison";
 
 const steps = [
   {
