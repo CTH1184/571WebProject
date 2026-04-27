@@ -5,11 +5,11 @@ import Calendar from "@ericz1803/react-google-calendar";
 const INSTAGRAM_URL = "https://www.instagram.com/weceuwmadison/";
 
 const instagramPosts = [
-  "https://www.instagram.com/p/DXQDE_ekUs6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
+  "https://www.instagram.com/p/DXQDE_ekUs6/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
   "https://www.instagram.com/p/DXM137Limcz/",
-  "https://www.instagram.com/p/DW4lkxnke5u/",
-  "https://www.instagram.com/p/DWzkhnBEe0R/",
-  "https://www.instagram.com/p/DWR_UY5kdh3/",
+  "https://www.instagram.com/p/DW4lkxnke5u/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+  "https://www.instagram.com/p/DWzkhnBEe0R/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+  "https://www.instagram.com/p/DWR_UY5kdh3/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
   "https://www.instagram.com/p/DWPE5PjDimw/",
 ];
 
@@ -42,7 +42,7 @@ export default function Events() {
               </div>
             ))}
           </div>
-          <div>
+          <div style="display: flex; justify-content: center">
             {/* Calendar */}
           <iframe src="https://calendar.google.com/calendar/embed?src=wece.uwmadison%40gmail.com&ctz=America%2FChicago" 
             style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
