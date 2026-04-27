@@ -31,6 +31,7 @@ export default function Navigation() {
               alt="WECE Logo"
               className="h-10 w-auto object-contain"
             />
+            <span className="text-lg font-semibold text-gray-900">Women in ECE</span>
           </Link>
 
           {/* Desktop Navigation */}
