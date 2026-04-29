@@ -202,23 +202,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Instagram Feed */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900">Follow Along</h2>
-            <a
-              href={INSTAGRAM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#c5050c] hover:text-[#a00409] font-semibold inline-flex items-center text-sm"
-            >
-              @weceuwmadison <ArrowRight className="ml-1" size={16} />
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-16 bg-[#c5050c] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
