@@ -216,19 +216,6 @@ export default function Home() {
               @weceuwmadison <ArrowRight className="ml-1" size={16} />
             </a>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {instagramPosts.map((post) => (
-              <a
-                key={post.alt}
-                href={INSTAGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="aspect-square bg-gray-200 rounded-lg overflow-hidden block hover:opacity-90 transition-opacity"
-              >
-                <img src={post.src} alt={post.alt} className="w-full h-full object-cover" />
-              </a>
-            ))}
-          </div>
         </div>
       </section>
 

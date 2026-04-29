@@ -41,7 +41,7 @@ export default function Events() {
               </div>
             ))}
           </div>
-          <div style="display: flex; justify-content: center">
+          <div className="grid grid-cols-1 gap-8 justify-items-center">
             {/* Calendar */}
           <iframe src="https://calendar.google.com/calendar/embed?src=wece.uwmadison%40gmail.com&ctz=America%2FChicago"
             style={{ border: 0 }} width="800" height="600" frameBorder="0" scrolling="no"></iframe>
