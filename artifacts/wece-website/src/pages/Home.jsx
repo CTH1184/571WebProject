@@ -62,7 +62,6 @@ const sponsors = [
   },
   { name: "Epic Systems", website: "https://www.epic.com/" },
   { name: "Garmin", website: "https://www.garmin.com/" },
-  { name: "Texas Instruments", website: "https://www.ti.com/" },
 ];
 
 const instagramPosts = [
