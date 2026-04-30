@@ -49,7 +49,7 @@ export default function About() {
       <section className="relative py-20 bg-gradient-to-br from-[#c5050c] to-[#a00409] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">About WECE</h1>
-          <p className="text-xl max-w-3xl text-white/90">
+          <p className="text-xl max-w-3xl text-white">
             Building a stronger, more diverse community in electrical and computer engineering at
             UW-Madison.
           </p>

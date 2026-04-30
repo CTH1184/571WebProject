@@ -9,18 +9,19 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 className="sr-only">Footer</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Brand / About */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img
                 src="/wece_logo-abstract.png"
-                alt="WECE Logo"
+                alt=""
+                aria-hidden="true"
                 className="h-10 w-auto object-contain bg-white rounded px-1"
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Women in Electrical and Computer Engineering at the University of Wisconsin–Madison.
+              Women in Electrical and Computer Engineering at the University of Wisconsin-Madison.
               Building a supportive community for underrepresented genders in ECE.
             </p>
             <div className="flex space-x-4">
@@ -52,7 +53,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4">
               Quick Links
@@ -73,7 +73,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Get Involved */}
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4">
               Get Involved
@@ -107,7 +106,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-          <p>© {new Date().getFullYear()} WECE at UW-Madison. All rights reserved.</p>
+          <p>Copyright {new Date().getFullYear()} WECE at UW-Madison. All rights reserved.</p>
         </div>
       </div>
     </footer>

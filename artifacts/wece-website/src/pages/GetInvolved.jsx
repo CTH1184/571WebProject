@@ -131,20 +131,20 @@ export default function GetInvolved() {
   };
 
   const hasOther = formData.interests.includes("Other");
+  const interestFieldId = (interest) =>
+    `interest-${interest.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
 
   return (
     <div className="flex flex-col">
-      {/* Hero */}
       <section className="relative py-20 bg-gradient-to-br from-[#c5050c] to-[#a00409] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Get Involved</h1>
-          <p className="text-xl max-w-3xl text-white/90">
+          <p className="text-xl max-w-3xl text-white">
             Ready to be part of the WECE community? Here's how to get started.
           </p>
         </div>
       </section>
 
-      {/* Steps */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">
@@ -164,7 +164,6 @@ export default function GetInvolved() {
         </div>
       </section>
 
-      {/* What to Expect */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">
@@ -187,7 +186,6 @@ export default function GetInvolved() {
         </div>
       </section>
 
-      {/* Interest Form */}
       <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-4 text-center text-gray-900">Join WECE</h2>
@@ -196,13 +194,18 @@ export default function GetInvolved() {
           </p>
 
           {submitted ? (
-            <div className="bg-green-50 border border-green-200 rounded-xl p-10 text-center">
-              <div className="text-green-600 text-5xl mb-4">✓</div>
+            <div
+              className="bg-green-50 border border-green-200 rounded-xl p-10 text-center"
+              role="status"
+              aria-live="polite"
+            >
+              <CheckCircle aria-hidden="true" className="text-green-700 mx-auto mb-4" size={48} />
               <h3 className="text-xl font-semibold text-green-800 mb-2">You're on the list!</h3>
               <p className="text-green-700">
                 Thank you for your interest in WECE! We'll be in touch soon with upcoming events and opportunities.
               </p>
               <button
+                type="button"
                 onClick={() => setSubmitted(false)}
                 className="mt-4 text-[#c5050c] hover:underline font-medium"
               >
@@ -280,29 +283,35 @@ export default function GetInvolved() {
                 </div>
               </div>
 
-              {/* Interests */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-3">
+              <fieldset>
+                <legend className="block text-sm font-medium text-gray-700 mb-3">
                   Interests (select all that apply)
-                </label>
-                <div className="flex flex-wrap gap-2">
+                </legend>
+                <div className="flex flex-wrap gap-3">
                   {interests.map((interest) => (
-                    <button
+                    <label
                       key={interest}
-                      type="button"
-                      onClick={() => toggleInterest(interest)}
-                      className={`px-4 py-2 rounded-full text-sm font-medium border transition-colors ${
+                      htmlFor={interestFieldId(interest)}
+                      className={`inline-flex cursor-pointer items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
                         formData.interests.includes(interest)
                           ? "bg-[#c5050c] text-white border-[#c5050c]"
                           : "bg-white text-gray-700 border-gray-300 hover:border-[#c5050c] hover:text-[#c5050c]"
                       }`}
                     >
+                      <input
+                        id={interestFieldId(interest)}
+                        name="interests"
+                        type="checkbox"
+                        value={interest}
+                        checked={formData.interests.includes(interest)}
+                        onChange={() => toggleInterest(interest)}
+                        className="h-4 w-4 accent-[#c5050c]"
+                      />
                       {interest}
-                    </button>
+                    </label>
                   ))}
                 </div>
 
-                {/* "Other" text field — visible only when "Other" is selected */}
                 {hasOther && (
                   <div className="mt-4">
                     <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="otherInterest">
@@ -319,7 +328,7 @@ export default function GetInvolved() {
                     />
                   </div>
                 )}
-              </div>
+              </fieldset>
 
               <button
                 type="submit"
@@ -332,7 +341,6 @@ export default function GetInvolved() {
         </div>
       </section>
 
-      {/* Other Ways to Get Involved */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">
@@ -345,7 +353,7 @@ export default function GetInvolved() {
               </div>
               <h3 className="text-2xl font-semibold mb-4 text-gray-900">Attend an Event</h3>
               <p className="text-gray-700 mb-6">
-                Come to any of our events to meet the community — no membership required. New members are always welcome!
+                Come to any of our events to meet the community - no membership required. New members are always welcome!
               </p>
               <Link
                 to="/events"
@@ -393,7 +401,6 @@ export default function GetInvolved() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">

@@ -8,7 +8,11 @@ function MemberCard({ member }) {
     <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow text-center">
       <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden">
         {member.photo ? (
-          <img src={member.photo} alt={member.name} className="w-full h-full object-cover" />
+          <img
+            src={member.photo}
+            alt={`Portrait of ${member.name}, ${member.title}`}
+            className="w-full h-full object-cover"
+          />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-[#c5050c] to-[#ffc5d0] flex items-center justify-center">
             <span className="text-white text-2xl font-bold">{member.name.charAt(0)}</span>
@@ -17,7 +21,7 @@ function MemberCard({ member }) {
       </div>
       <h3 className="text-lg font-semibold text-gray-900 mb-1">{member.name}</h3>
       <p className="text-[#c5050c] font-medium text-sm mb-1">{member.title}</p>
-      <p className="text-gray-500 text-sm mb-3">{member.year}</p>
+      <p className="text-gray-700 text-sm mb-3">{member.year}</p>
       <p className="text-gray-600 text-sm mb-4">{member.bio}</p>
       <a
         href={`mailto:${member.email}@wisc.edu`}
@@ -150,17 +154,15 @@ function SectionHeader({ title }) {
 export default function Board() {
   return (
     <div className="flex flex-col">
-      {/* Hero */}
       <section className="relative py-16 md:py-20 bg-gradient-to-br from-[#c5050c] via-[#a00409] to-[#c5050c] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Meet the Team</h1>
-          <p className="text-xl text-white/90">
-            Meet the student leaders behind WECE at UW–Madison.
+          <p className="text-xl text-white">
+            Meet the student leaders behind WECE at UW-Madison.
           </p>
         </div>
       </section>
 
-      {/* Presidents */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader title="Co-Presidents" />
@@ -170,7 +172,6 @@ export default function Board() {
         </div>
       </section>
 
-      {/* Operations */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader title="Operations" />
@@ -180,7 +181,6 @@ export default function Board() {
         </div>
       </section>
 
-      {/* Internal Relations */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader title="Internal Relations" />
@@ -190,7 +190,6 @@ export default function Board() {
         </div>
       </section>
 
-      {/* External Relations */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader title="External Relations" />
@@ -200,7 +199,6 @@ export default function Board() {
         </div>
       </section>
 
-      {/* Finance */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader title="Finance" />
@@ -210,7 +208,6 @@ export default function Board() {
         </div>
       </section>
 
-      {/* Senior Advisors */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader title="Senior Advisors" />
@@ -220,11 +217,10 @@ export default function Board() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-16 bg-gradient-to-br from-[#c5050c] via-[#a00409] to-[#c5050c] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Questions about WECE?</h2>
-          <p className="text-xl mb-8 text-white/90">
+          <p className="text-xl mb-8 text-white">
             Reach out to us anytime. We're happy to answer questions about WECE, membership, and events.
           </p>
           <a

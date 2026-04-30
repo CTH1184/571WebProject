@@ -48,10 +48,10 @@ const upcomingEvents = [
 ];
 
 const categoryColors = {
-  Professional: "bg-blue-100 text-blue-700",
-  Academic: "bg-green-100 text-green-700",
-  Mentorship: "bg-purple-100 text-purple-700",
-  Social: "bg-orange-100 text-orange-700",
+  Professional: "bg-blue-100 text-blue-800",
+  Academic: "bg-green-100 text-green-800",
+  Mentorship: "bg-violet-100 text-violet-800",
+  Social: "bg-orange-100 text-orange-800",
   Industry: "bg-[#ffc5d0] text-[#c5050c]",
 };
 
@@ -68,19 +68,19 @@ const sponsors = [
 const instagramPosts = [
   {
     src: "https://images.unsplash.com/photo-1573165706511-3ffde6ef1fe3?w=400&q=80",
-    alt: "Engineering team working",
+    alt: "Students collaborating around a table",
   },
   {
     src: "https://images.unsplash.com/photo-1762158007836-25d13ab34c1c?w=400&q=80",
-    alt: "Students networking",
+    alt: "Students talking during a networking event",
   },
   {
     src: "https://images.unsplash.com/photo-1643732774973-ff2d0e610d7a?w=400&q=80",
-    alt: "Electronics circuit board",
+    alt: "Close-up of an electronics circuit board",
   },
   {
     src: "https://images.unsplash.com/photo-1573496130141-209d200cebd8?w=400&q=80",
-    alt: "Mentorship session",
+    alt: "Two people talking during a mentorship session",
   },
 ];
 
@@ -95,7 +95,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Women in Electrical &amp; Computer Engineering
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90">
+            <p className="text-xl md:text-2xl mb-8 text-white">
               Building a supportive community for women and underrepresented genders in ECE at UW-Madison
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -206,7 +206,7 @@ export default function Home() {
       <section className="py-16 bg-[#c5050c] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Get Involved?</h2>
-          <p className="text-xl mb-8 text-white/90">
+          <p className="text-xl mb-8 text-white">
             Join our community and start your journey with WECE today.
           </p>
           <Link
