@@ -136,7 +136,7 @@ export default function GetInvolved() {
 
   return (
     <div className="flex flex-col">
-      <section className="relative py-20 bg-gradient-to-br from-[#c5050c] to-[#a00409] text-white">
+      <section className="relative py-20 bg-gradient-to-br from-[#8b0000] to-[#a00409] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Get Involved</h1>
           <p className="text-xl max-w-3xl text-white">
@@ -153,7 +153,7 @@ export default function GetInvolved() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step) => (
               <div key={step.number} className="text-center">
-                <div className="w-16 h-16 bg-[#c5050c] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#8b0000] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   {step.number}
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{step.title}</h3>
@@ -176,7 +176,7 @@ export default function GetInvolved() {
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow text-center"
               >
                 <div className="w-14 h-14 bg-[#ffc5d0] rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <Icon className="text-[#c5050c]" size={28} />
+                  <Icon aria-hidden="true" className="text-[#8b0000]" size={28} />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
                 <p className="text-gray-600 text-sm">{description}</p>
@@ -207,7 +207,7 @@ export default function GetInvolved() {
               <button
                 type="button"
                 onClick={() => setSubmitted(false)}
-                className="mt-4 text-[#c5050c] hover:underline font-medium"
+                className="mt-4 text-[#8b0000] hover:underline font-medium"
               >
                 Submit another response
               </button>
@@ -226,7 +226,7 @@ export default function GetInvolved() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#c5050c] focus:border-transparent"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#8b0000] focus:border-transparent"
                     placeholder="Your name"
                   />
                 </div>
@@ -241,7 +241,7 @@ export default function GetInvolved() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#c5050c] focus:border-transparent"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#8b0000] focus:border-transparent"
                     placeholder="your@wisc.edu"
                   />
                 </div>
@@ -257,7 +257,7 @@ export default function GetInvolved() {
                     name="year"
                     value={formData.year}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#c5050c] focus:border-transparent bg-white"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#8b0000] focus:border-transparent bg-white"
                   >
                     <option value="">Select year</option>
                     <option value="freshman">Freshman</option>
@@ -277,7 +277,7 @@ export default function GetInvolved() {
                     type="text"
                     value={formData.major}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#c5050c] focus:border-transparent"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#8b0000] focus:border-transparent"
                     placeholder="e.g., ECE, CS, EE..."
                   />
                 </div>
@@ -294,8 +294,8 @@ export default function GetInvolved() {
                       htmlFor={interestFieldId(interest)}
                       className={`inline-flex cursor-pointer items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
                         formData.interests.includes(interest)
-                          ? "bg-[#c5050c] text-white border-[#c5050c]"
-                          : "bg-white text-gray-700 border-gray-300 hover:border-[#c5050c] hover:text-[#c5050c]"
+                          ? "bg-[#8b0000] text-white border-[#8b0000]"
+                          : "bg-white text-gray-700 border-gray-300 hover:border-[#8b0000] hover:text-[#8b0000]"
                       }`}
                     >
                       <input
@@ -305,7 +305,7 @@ export default function GetInvolved() {
                         value={interest}
                         checked={formData.interests.includes(interest)}
                         onChange={() => toggleInterest(interest)}
-                        className="h-4 w-4 accent-[#c5050c]"
+                        className="h-4 w-4 accent-[#8b0000]"
                       />
                       {interest}
                     </label>
@@ -323,7 +323,7 @@ export default function GetInvolved() {
                       type="text"
                       value={formData.otherInterest}
                       onChange={handleChange}
-                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#c5050c] focus:border-transparent"
+                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#8b0000] focus:border-transparent"
                       placeholder="Tell us what else interests you..."
                     />
                   </div>
@@ -332,7 +332,7 @@ export default function GetInvolved() {
 
               <button
                 type="submit"
-                className="w-full py-3 bg-[#c5050c] text-white rounded-lg hover:bg-[#a00409] transition-colors font-semibold"
+                className="w-full py-3 bg-[#8b0000] text-white rounded-lg hover:bg-[#a00409] transition-colors font-semibold"
               >
                 Join the Mailing List
               </button>
@@ -349,7 +349,7 @@ export default function GetInvolved() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl p-8 shadow-sm">
               <div className="w-16 h-16 bg-[#ffc5d0] rounded-lg flex items-center justify-center mx-auto mb-6">
-                <Calendar className="text-[#c5050c]" size={32} />
+                <Calendar className="text-[#8b0000]" size={32} />
               </div>
               <h3 className="text-2xl font-semibold mb-4 text-gray-900">Attend an Event</h3>
               <p className="text-gray-700 mb-6">
@@ -357,16 +357,16 @@ export default function GetInvolved() {
               </p>
               <Link
                 to="/events"
-                className="text-[#c5050c] hover:text-[#a00409] font-semibold inline-flex items-center"
+                className="text-[#8b0000] hover:text-[#a00409] font-semibold inline-flex items-center"
               >
                 View Events
-                <ArrowRight className="ml-2" size={18} />
+                <ArrowRight aria-hidden="true" focusable="false" className="ml-2" size={18} />
               </Link>
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-sm">
               <div className="w-16 h-16 bg-[#ffc5d0] rounded-lg flex items-center justify-center mx-auto mb-6">
-                <Heart className="text-[#c5050c]" size={32} />
+                <Heart aria-hidden="true" focusable="false" className="text-[#8b0000]" size={32} />
               </div>
               <h3 className="text-2xl font-semibold mb-4 text-gray-900">Mentorship Program</h3>
               <p className="text-gray-700 mb-6">
@@ -374,16 +374,16 @@ export default function GetInvolved() {
               </p>
               <a
                 href={`mailto:${CONTACT_EMAIL}@gmail.com`}
-                className="text-[#c5050c] hover:text-[#a00409] font-semibold inline-flex items-center"
+                className="text-[#8b0000] hover:text-[#a00409] font-semibold inline-flex items-center"
               >
                 Learn More
-                <ArrowRight className="ml-2" size={18} />
+                <ArrowRight aria-hidden="true" focusable="false" className="ml-2" size={18} />
               </a>
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-sm">
               <div className="w-16 h-16 bg-[#ffc5d0] rounded-lg flex items-center justify-center mx-auto mb-6">
-                <Award className="text-[#c5050c]" size={32} />
+                <Award aria-hidden="true" focusable="false" className="text-[#8b0000]" size={32} />
               </div>
               <h3 className="text-2xl font-semibold mb-4 text-gray-900">Apply for Board Positions</h3>
               <p className="text-gray-700 mb-6">
@@ -391,10 +391,10 @@ export default function GetInvolved() {
               </p>
               <Link
                 to="/board"
-                className="text-[#c5050c] hover:text-[#a00409] font-semibold inline-flex items-center"
+                className="text-[#8b0000] hover:text-[#a00409] font-semibold inline-flex items-center"
               >
                 Meet the Board
-                <ArrowRight className="ml-2" size={18} />
+                <ArrowRight aria-hidden="true" focusable="false" className="ml-2" size={18} />
               </Link>
             </div>
           </div>
@@ -410,7 +410,7 @@ export default function GetInvolved() {
             {faqs.map((faq) => (
               <div key={faq.question} className="bg-gray-50 rounded-xl p-6 shadow-sm">
                 <h3 className="text-xl font-semibold mb-3 text-gray-900 flex items-start">
-                  <CheckCircle className="text-[#c5050c] mr-3 mt-1 shrink-0" size={24} />
+                  <CheckCircle aria-hidden="true" focusable="false" className="text-[#8b0000] mr-3 mt-1 shrink-0" size={24} />
                   {faq.question}
                 </h3>
                 <p className="text-gray-700 ml-9">{faq.answer}</p>

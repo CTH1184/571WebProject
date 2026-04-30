@@ -16,7 +16,7 @@ export default function Events() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="relative py-20 bg-gradient-to-br from-[#c5050c] to-[#a00409] text-white">
+      <section className="relative py-20 bg-gradient-to-br from-[#8b0000] to-[#a00409] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Events</h1>
           <p className="text-xl max-w-3xl text-white">
@@ -36,9 +36,21 @@ export default function Events() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             {instagramPosts.map((url) => (
-              <div key={url} className="w-full flex justify-center">
-                <InstagramEmbed url={url} width={328} />
+              <div className="w-full flex justify-center">
+              <div role="region" aria-label="Instagram post from WECE">
+                
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block focus:outline-none focus:ring-2 focus:ring-[#c5050c]"
+                  aria-label="View this WECE Instagram post (opens in a new tab)"
+                >
+                  <InstagramEmbed url={url} width={328} />
+                </a>
+
               </div>
+            </div>
             ))}
           </div>
           <div className="mt-10 grid grid-cols-1 gap-8 justify-items-center">
@@ -68,13 +80,13 @@ export default function Events() {
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-3 bg-[#c5050c] text-white rounded-lg hover:bg-[#a00409] transition-colors font-semibold"
+              className="inline-flex items-center justify-center px-6 py-3 bg-[#8b0000] text-white rounded-lg hover:bg-[#a00409] transition-colors font-semibold"
             >
               Follow @weceuwmadison
             </a>
             <Link
               to="/get-involved"
-              className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#c5050c] text-[#c5050c] rounded-lg hover:bg-[#ffc5d0]/20 transition-colors font-semibold"
+              className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#8b0000] text-[#8b0000] rounded-lg hover:bg-[#ffc5d0]/20 transition-colors font-semibold"
             >
               Join Mailing List
             </Link>

@@ -52,7 +52,7 @@ const categoryColors = {
   Academic: "bg-green-100 text-green-800",
   Mentorship: "bg-violet-100 text-violet-800",
   Social: "bg-orange-100 text-orange-800",
-  Industry: "bg-[#ffc5d0] text-[#c5050c]",
+  Industry: "bg-[#ffc5d0] text-[#8b0000]",
 };
 
 const sponsors = [
@@ -88,7 +88,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#c5050c] to-[#a00409] text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-[#8b0000] to-[#a00409] text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_50%,_white_1px,_transparent_1px)] bg-[size:40px_40px]" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="max-w-3xl">
@@ -101,10 +101,10 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/get-involved"
-                className="inline-flex items-center justify-center px-8 py-3 bg-white text-[#c5050c] rounded-lg hover:bg-gray-100 transition-colors font-semibold"
+                className="inline-flex items-center justify-center px-8 py-3 bg-white text-[#8b0000] rounded-lg hover:bg-gray-100 transition-colors font-semibold"
               >
                 Get Involved
-                <ArrowRight className="ml-2" size={20} />
+                <ArrowRight aria-hidden="true" focusable="false" className="ml-2" size={20} />
               </Link>
               <Link
                 to="/events"
@@ -133,7 +133,7 @@ export default function Home() {
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow text-center"
               >
                 <div className="w-14 h-14 bg-[#ffc5d0] rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <Icon className="text-[#c5050c]" size={28} />
+                  <Icon aria-hidden="true" focusable="false" className="text-[#8b0000]" size={28} />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
                 <p className="text-gray-600 text-sm">{description}</p>
@@ -150,9 +150,9 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Upcoming Events</h2>
             <Link
               to="/events"
-              className="text-[#c5050c] hover:text-[#a00409] font-semibold inline-flex items-center text-sm"
+              className="text-[#8b0000] hover:text-[#a00409] font-semibold inline-flex items-center text-sm"
             >
-              View All <ArrowRight className="ml-1" size={16} />
+              View All <ArrowRight aria-hidden="true" focusable="false" className="ml-1" size={16} />
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -166,7 +166,7 @@ export default function Home() {
                   {event.type}
                 </span>
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">{event.title}</h3>
-                <p className="text-[#c5050c] text-sm font-medium mb-2">{event.date}</p>
+                <p className="text-[#8b0000] text-sm font-medium mb-2">{event.date}</p>
                 <p className="text-gray-600 text-sm">{event.description}</p>
               </div>
             ))}
@@ -185,7 +185,7 @@ export default function Home() {
                 href={s.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white border border-gray-200 rounded-lg px-6 py-4 text-gray-700 font-semibold hover:border-[#c5050c] hover:text-[#c5050c] transition-colors shadow-sm"
+                className="bg-white border border-gray-200 rounded-lg px-6 py-4 text-gray-700 font-semibold hover:border-[#8b0000] hover:text-[#8b0000] transition-colors shadow-sm"
               >
                 {s.name}
               </a>
@@ -194,16 +194,16 @@ export default function Home() {
           <div className="mt-8">
             <Link
               to="/sponsors"
-              className="text-[#c5050c] hover:text-[#a00409] font-semibold inline-flex items-center"
+              className="text-[#8b0000] hover:text-[#a00409] font-semibold inline-flex items-center"
             >
-              View All Sponsors <ArrowRight className="ml-1" size={16} />
+              View All Sponsors <ArrowRight aria-hidden="true" focusable="false" className="ml-1" size={16} />
             </Link>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#c5050c] text-white">
+      <section className="py-16 bg-[#8b0000] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Get Involved?</h2>
           <p className="text-xl mb-8 text-white">
@@ -211,10 +211,10 @@ export default function Home() {
           </p>
           <Link
             to="/get-involved"
-            className="inline-flex items-center px-8 py-3 bg-white text-[#c5050c] rounded-lg hover:bg-gray-100 transition-colors font-semibold"
+            className="inline-flex items-center px-8 py-3 bg-white text-[#8b0000] rounded-lg hover:bg-gray-100 transition-colors font-semibold"
           >
             Join WECE
-            <ArrowRight className="ml-2" size={20} />
+            <ArrowRight aria-hidden="true" focusable="false" className="ml-2" size={20} />
           </Link>
         </div>
       </section>
