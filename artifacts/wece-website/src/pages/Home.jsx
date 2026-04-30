@@ -52,7 +52,7 @@ const categoryColors = {
   Academic: "bg-green-100 text-green-800",
   Mentorship: "bg-violet-100 text-violet-800",
   Social: "bg-orange-100 text-orange-800",
-  Industry: "bg-[#ffc5d0] text-[#c5050c]",
+  Industry: "bg-[#ffc5d0] text-[#7a0007]",
 };
 
 const sponsors = [
