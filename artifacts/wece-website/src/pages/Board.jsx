@@ -15,11 +15,13 @@ function MemberCard({ member }) {
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-[#8b0000] to-[#ffc5d0] flex items-center justify-center">
-            <div
-            className="..."
-            role="img"
-            aria-label={`Portrait placeholder for ${member.name}, ${member.title}`}
-          >
+            <span
+              role="img"
+              aria-label={`Portrait placeholder for ${member.name}, ${member.title}`}
+              className="text-white text-2xl font-bold"
+            >
+              {member.name.charAt(0)}
+            </span>
           </div>
         )}
       </div>
