@@ -62,10 +62,20 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    setFormData({ name: "", email: "", reason: "", message: "" });
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+    if (res.ok) {
+      setSubmitted(true);
+      setFormData({ name: "", email: "", reason: "", message: "" });
+    } else {
+      const { error } = await res.json();
+      alert(`Submission failed: ${error}`);
+    }
   };
 
   return (
