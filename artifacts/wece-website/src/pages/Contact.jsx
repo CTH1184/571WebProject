@@ -80,7 +80,7 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col">
-      <section className="relative py-20 bg-gradient-to-br from-[#8b0000] to-[#a00409] text-white">
+      <section className="relative py-20 bg-gradient-to-br from-[#c5050c] to-[#a00409] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl max-w-3xl text-white">
@@ -107,7 +107,7 @@ export default function Contact() {
                 <p className="text-gray-600 mb-4">{card.description}</p>
                 <a
                   href={`mailto:${card.email}`}
-                  className="text-[#8b0000] hover:text-[#a00409] font-semibold inline-flex items-center"
+                  className="text-[#c5050c] hover:text-[#a00409] font-semibold inline-flex items-center"
                 >
                   <Mail aria-hidden="true" focusable="false" size={18} />
                   {card.email}
@@ -123,7 +123,7 @@ export default function Contact() {
                 href={INSTAGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 bg-[#ffc5d0]/30 text-[#8b0000] rounded-lg hover:bg-[#ffc5d0]/60 transition-colors font-semibold"
+                className="flex items-center gap-2 px-6 py-3 bg-[#ffc5d0]/30 text-[#c5050c] rounded-lg hover:bg-[#ffc5d0]/60 transition-colors font-semibold"
               >
                 <Instagram aria-hidden="true" focusable="false" size={20} />
                 Instagram
@@ -156,7 +156,7 @@ export default function Contact() {
                 <button
                   type="button"
                   onClick={() => setSubmitted(false)}
-                  className="mt-4 text-[#8b0000] hover:underline font-medium"
+                  className="mt-4 text-[#c5050c] hover:underline font-medium"
                 >
                   Send another message
                 </button>
@@ -175,7 +175,7 @@ export default function Contact() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#8b0000] focus:border-transparent"
+                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#c5050c] focus:border-transparent"
                       placeholder="Your name"
                     />
                   </div>
@@ -190,7 +190,7 @@ export default function Contact() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#8b0000] focus:border-transparent"
+                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#c5050c] focus:border-transparent"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -204,7 +204,7 @@ export default function Contact() {
                     name="reason"
                     value={formData.reason}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#8b0000] focus:border-transparent bg-white"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#c5050c] focus:border-transparent bg-white"
                   >
                     <option value="">Select a reason...</option>
                     <option value="general">General Inquiry</option>
@@ -225,13 +225,13 @@ export default function Contact() {
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#8b0000] focus:border-transparent resize-none"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#c5050c] focus:border-transparent resize-none"
                     placeholder="Tell us how we can help..."
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full py-3 bg-[#8b0000] text-white rounded-lg hover:bg-[#a00409] transition-colors font-semibold"
+                  className="w-full py-3 bg-[#c5050c] text-white rounded-lg hover:bg-[#a00409] transition-colors font-semibold"
                 >
                   Send Message
                 </button>

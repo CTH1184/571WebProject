@@ -14,7 +14,7 @@ function MemberCard({ member }) {
             className="w-full h-full object-cover"
           />
         ) : (
-          <div className="w-full h-full bg-gradient-to-br from-[#8b0000] to-[#ffc5d0] flex items-center justify-center">
+          <div className="w-full h-full bg-gradient-to-br from-[#c5050c] to-[#ffc5d0] flex items-center justify-center">
             <span
               role="img"
               aria-label={`Portrait placeholder for ${member.name}, ${member.title}`}
@@ -26,12 +26,12 @@ function MemberCard({ member }) {
         )}
       </div>
       <h3 className="text-lg font-semibold text-gray-900 mb-1">{member.name}</h3>
-      <p className="text-[#8b0000] font-medium text-sm mb-1">{member.title}</p>
+      <p className="text-[#c5050c] font-medium text-sm mb-1">{member.title}</p>
       <p className="text-gray-700 text-sm mb-3">{member.year}</p>
       <p className="text-gray-600 text-sm mb-4">{member.bio}</p>
       <a
         href={`mailto:${member.email}@wisc.edu`}
-        className="inline-flex items-center text-[#8b0000] hover:text-[#a00409] text-sm font-medium transition-colors"
+        className="inline-flex items-center text-[#c5050c] hover:text-[#a00409] text-sm font-medium transition-colors"
       >
         <Mail aria-hidden="true" focusable="false" size={14} className="mr-1" />
         {member.email}@wisc.edu
@@ -152,7 +152,7 @@ function SectionHeader({ title }) {
   return (
     <div className="text-center mb-10">
       <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{title}</h2>
-      <div className="mt-3 mx-auto w-16 h-1 bg-[#8b0000] rounded-full" />
+      <div className="mt-3 mx-auto w-16 h-1 bg-[#c5050c] rounded-full" />
     </div>
   );
 }
@@ -160,7 +160,7 @@ function SectionHeader({ title }) {
 export default function Board() {
   return (
     <div className="flex flex-col">
-      <section className="relative py-16 md:py-20 bg-gradient-to-br from-[#8b0000] via-[#a00409] to-[#8b0000] text-white">
+      <section className="relative py-16 md:py-20 bg-gradient-to-br from-[#c5050c] via-[#a00409] to-[#c5050c] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Meet the Team</h1>
           <p className="text-xl text-white">
@@ -223,7 +223,7 @@ export default function Board() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-[#8b0000] via-[#a00409] to-[#8b0000] text-white">
+      <section className="py-16 bg-gradient-to-br from-[#c5050c] via-[#a00409] to-[#c5050c] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Questions about WECE?</h2>
           <p className="text-xl mb-8 text-white">
@@ -231,7 +231,7 @@ export default function Board() {
           </p>
           <a
             href={`mailto:${CONTACT_EMAIL}@gmail.com`}
-            className="inline-flex items-center justify-center px-8 py-3 bg-white text-[#8b0000] rounded-lg hover:bg-gray-100 transition-colors font-semibold shadow-lg"
+            className="inline-flex items-center justify-center px-8 py-3 bg-white text-[#c5050c] rounded-lg hover:bg-gray-100 transition-colors font-semibold shadow-lg"
           >
             <Mail className="mr-2" size={20} />
             {CONTACT_EMAIL}@gmail.com

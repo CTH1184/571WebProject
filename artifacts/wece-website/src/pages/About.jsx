@@ -88,8 +88,8 @@ export default function About() {
                 key={title}
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow text-center"
               >
-                <div className="w-14 h-14 bg-[#ffe4ea] rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <Icon aria-hidden="true" focusable="false" className="text-[#c5050c]" size={28} />
+                <div className="w-14 h-14 bg-[#ffc5d0] rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Icon aria-hidden="true" focusable="false" className="text-[#8b0000]" size={28} />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
                 <p className="text-gray-600 text-sm">{description}</p>

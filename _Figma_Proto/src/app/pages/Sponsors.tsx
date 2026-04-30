@@ -56,7 +56,7 @@ export function Sponsors() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-[#8b0000] via-[#a00409] to-[#8b0000] text-white">
+      <section className="relative py-20 bg-gradient-to-br from-[#c5050c] via-[#a00409] to-[#c5050c] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Industry</h1>
           <p className="text-xl max-w-3xl text-white/90 mb-6 leading-relaxed">
@@ -70,7 +70,7 @@ export function Sponsors() {
               href="https://forms.gle/zLbjDfV7YF1raozS9"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#8b0000] rounded-lg hover:bg-gray-100 transition-colors font-semibold shadow-lg hover:shadow-xl"
+              className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#c5050c] rounded-lg hover:bg-gray-100 transition-colors font-semibold shadow-lg hover:shadow-xl"
             >
               <FileText aria-hidden="true" className="mr-2" size={20} />
               Company Database Form
@@ -137,7 +137,7 @@ export function Sponsors() {
                   href={sponsor.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full px-6 py-3 bg-[#8b0000] text-white rounded-lg hover:bg-[#a00409] transition-colors font-semibold inline-flex items-center justify-center shadow-md hover:shadow-lg"
+                  className="w-full px-6 py-3 bg-[#c5050c] text-white rounded-lg hover:bg-[#a00409] transition-colors font-semibold inline-flex items-center justify-center shadow-md hover:shadow-lg"
                 >
                   Visit Website
                   <ExternalLink aria-hidden="true" className="ml-2" size={18} />
@@ -164,7 +164,7 @@ export function Sponsors() {
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200 max-w-md mx-auto mb-8">
               <div className="text-center">
                 <div className="w-20 h-20 bg-gradient-to-br from-[#ffc5d0] to-[#ffb3c1] rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
-                  <span className="text-2xl font-bold text-[#8b0000]">
+                  <span className="text-2xl font-bold text-[#c5050c]">
                     {externalVP.name
                       .split(" ")
                       .map((n) => n[0])
@@ -174,10 +174,10 @@ export function Sponsors() {
                 <h3 className="text-2xl font-semibold text-gray-900 mb-1">
                   {externalVP.name}
                 </h3>
-                <p className="text-[#8b0000] font-semibold mb-4">{externalVP.role}</p>
+                <p className="text-[#c5050c] font-semibold mb-4">{externalVP.role}</p>
                 <a
                   href={`mailto:${externalVP.email}@wisc.edu`}
-                  className="text-gray-600 hover:text-[#8b0000] transition-colors inline-flex items-center"
+                  className="text-gray-600 hover:text-[#c5050c] transition-colors inline-flex items-center"
                 >
                   <Mail aria-hidden="true" size={18} className="mr-2" />
                   {externalVP.email}@wisc.edu
@@ -187,7 +187,7 @@ export function Sponsors() {
             <div className="text-center">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center px-8 py-3 bg-[#8b0000] text-white rounded-lg hover:bg-[#a00409] transition-colors font-semibold shadow-md hover:shadow-lg"
+                className="inline-flex items-center justify-center px-8 py-3 bg-[#c5050c] text-white rounded-lg hover:bg-[#a00409] transition-colors font-semibold shadow-md hover:shadow-lg"
               >
                 <Mail aria-hidden="true" className="mr-2" size={20} />
                 Contact Us
@@ -198,7 +198,7 @@ export function Sponsors() {
       </section>
 
       {/* Bottom CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-[#8b0000] via-[#a00409] to-[#8b0000] text-white">
+      <section className="py-16 bg-gradient-to-br from-[#c5050c] via-[#a00409] to-[#c5050c] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Partner with WECE?
@@ -212,7 +212,7 @@ export function Sponsors() {
               href="https://forms.gle/zLbjDfV7YF1raozS9"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-3 bg-white text-[#8b0000] rounded-lg hover:bg-gray-100 transition-colors font-semibold shadow-lg hover:shadow-xl"
+              className="inline-flex items-center justify-center px-8 py-3 bg-white text-[#c5050c] rounded-lg hover:bg-gray-100 transition-colors font-semibold shadow-lg hover:shadow-xl"
             >
               <FileText aria-hidden="true" className="mr-2" size={20} />
               Company Database Form
